@@ -1,0 +1,80 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textOrderNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Order #123456"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/textCustomerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textOrderNumber"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Customer: John Doe"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/receiptRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textCustomerName"
+        android:layout_marginTop="16dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/textSubtotal"
+        android:layout_marginBottom="-12dp"
+        android:background="@color/PrimaryColor">
+
+    </View>
+
+    <TextView
+        android:id="@+id/textSubtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/receiptRecyclerView"
+        android:layout_marginTop="21dp"
+        android:text="Subtotal: ₱ "
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/textTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSubtotal"
+        android:layout_marginTop="16dp"
+        android:text="Total: ₱ "
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/printButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Print"
+        android:textSize="18sp"
+        android:layout_below="@id/textTotal"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+</ScrollView>

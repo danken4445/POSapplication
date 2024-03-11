@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/action_history"
+        android:title="Recent History"
+        android:icon="@drawable/orders"
+        android:iconTint="@color/white"
+        />
+    <item
+        android:id="@+id/action_sale"
+        android:icon="@drawable/sale"
+        android:title="Sale"
+        android:iconTint="@color/white"
+
+        />
+
+
+</menu>
